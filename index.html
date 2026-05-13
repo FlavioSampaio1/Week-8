@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 | Objects, Loops, and Arrays</title>
+</head>
+<body>
+    
+    <script>
+        // OBJECTS------------------------------------------------------------------------------------------------------------------------------
+
+        var person = {
+            first: "Joel", // We add commas whenever there is another value after
+            last: "Hanson"
+        }
+
+        console.log(person.first)
+        console.log(person.last)
+
+        var car = {
+            tires: 6,
+            windows: 25,
+            make: "subuwu",
+            model: "idk",
+            drive: function () {console.log("The subuwu goes vroom")}
+        }
+
+        console.log(car.make)
+        car.drive()
+
+        // ARRAYS-------------------------------------------------------------------------------------------------------------------------------
+
+        var people = [
+            "Nelson", // 0
+            "Greg", // 1
+            "Travis", // 2
+            "Perry", // 3
+            "Angel" // 4
+        ]
+
+        // Logging out Travis
+        console.log(people[2])
+        // Logging out Angel
+        console.log(people[4])
+
+        console.log("The size of the array is " + people.length)
+        console.log(people[5])
+
+        people[5] = "Joel"
+
+        console.log(people[5])
+        console.log("The size of the array is " + people.length)
+
+        var number_array = [
+            1,2,3,4,5
+        ]
+
+        console.log(number_array[3])
+
+        // Replacing the value of an index
+        number_array[3] = 69420
+
+        console.log(number_array[3])
+
+        var movies = [
+            "Howls Moving Castle",
+            "Dodgeball",
+            "Star Wars",
+            "Lord of the Rings"
+        ]
+
+        // Pushing An element
+        movies.push("Space Jam")
+
+        console.log(movies[4])
+
+        // Pushing another element
+        movies.push("Space Balls")
+        console.log(movies[5])
+
+    </script>
+    
+</body>
+</html>
