@@ -7,6 +7,16 @@
 </head>
 <body>
     
+    <div id ="movies_container">
+        <h2>My Favorite Movies</h2>
+
+        <ul id="favorite_movies">
+
+        </ul>
+
+    </div>
+
+
     <script>
         // OBJECTS------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,7 +77,10 @@
             "Howls Moving Castle",
             "Dodgeball",
             "Star Wars",
-            "Lord of the Rings"
+            "Lord of the Rings",
+            "The Sandlot",
+            "Ferrs Bueller's Day Off",
+            "Kroll"
         ]
 
         // Pushing An element
@@ -78,6 +91,38 @@
         // Pushing another element
         movies.push("Space Balls")
         console.log(movies[5])
+
+        // For Loops----------------------------------------------------------------------------------------------------------------------------
+
+        for(let i = 0; i < 10; i++)
+        {
+            console.log(i)
+        }
+
+        var number_to_loop = 230
+
+        for(let i = 0; i < number_to_loop; i+=2)
+        {
+            //console.log("Hello" + i)
+        }
+
+        // Looping through the movies array
+
+        for(let i = 0; i < movies.length; i++)
+        {
+            console.log(movies)
+        }
+
+        var favorite_movie_container = document.querySelector("#favorite_movies")
+
+        for(let i = 0; i < movies.length; i++)
+        {
+            favorite_movie_container.innerHTML += "<li>" + movies[i] + "</li>"
+        }
+
+        for(let object_key in car){
+            console.log(car[object_key])
+        }
 
     </script>
     
